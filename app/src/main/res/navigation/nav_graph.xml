@@ -9,12 +9,20 @@
         android:id="@+id/welcomeFragment"
         android:name="com.hayohtee.secretmessage.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/messageFragment"
         android:name="com.hayohtee.secretmessage.MessageFragment"
         android:label="fragment_message"
-        tools:layout="@layout/fragment_message" />
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_messageFragment_to_encryptedFragment"
+            app:destination="@id/encryptedFragment" />
+    </fragment>
     <fragment
         android:id="@+id/encryptedFragment"
         android:name="com.hayohtee.secretmessage.EncryptedFragment"
