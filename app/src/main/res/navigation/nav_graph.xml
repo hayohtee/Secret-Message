@@ -27,5 +27,9 @@
         android:id="@+id/encryptedFragment"
         android:name="com.hayohtee.secretmessage.EncryptedFragment"
         android:label="fragment_encrypted"
-        tools:layout="@layout/fragment_encrypted" />
+        tools:layout="@layout/fragment_encrypted" >
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
 </navigation>
